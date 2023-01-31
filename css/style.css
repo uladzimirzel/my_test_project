@@ -1,0 +1,78 @@
+@charset "UTF-8";
+/***START MIXINS, VARIABLES***/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway:wght@400;800&display=swap");
+/***END MIXIN's, VARIABLES***/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background: url("../img/header.svg") no-repeat center center;
+  background-size: cover;
+  height: 850px;
+}
+
+.header {
+  height: 100px;
+  background-color: rgba(16, 16, 29, 0.9);
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.header-logo {
+  display: inline-block;
+}
+
+.header-logo-text {
+  text-transform: uppercase;
+  color: #fff;
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 28px;
+  margin: 33px 0 31px 0;
+}
+.header-logo-text__color {
+  color: #42A9ED;
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 44px 0 39px 0;
+}
+
+.header-nav-menu {
+  display: flex;
+}
+.header-nav-menu a {
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  /*Нужно подправить на 600 и загрузить шрифт*/
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.header-nav-menu__item {
+  margin: 0 60px 0 0;
+}
+.header-nav-menu__item:last-child {
+  margin: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
