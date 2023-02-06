@@ -181,6 +181,7 @@ header
   justify-content: center
   text-align: center
   position: relative
+
   &:last-child::before
     display: none
 
@@ -217,3 +218,87 @@ header
     border: 6px #C4C4C4
     border-top-style: dotted
 
+.order-form-field
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin-top: 80px
+
+
+  &__item
+    width: 370px
+    height: 48px
+    background: rgba(255, 255, 255, 0.89)
+    border: 1px solid #ffffff
+    border-radius: 3px
+    padding: 10px 10px
+    font-family: Lato, sans-serif
+    font-style: normal
+    font-weight: 400
+    font-size: 18px
+    line-height: 22px
+    color: #272733
+    margin-right: 30px
+
+
+    &::placeholder
+      color: #272733
+
+.order-range-block
+  margin-right: 30px
+  margin-top: 30px
+
+.order-range-content
+  width: 770px
+  display: flex
+  justify-content: space-between
+  color: #ffffff
+
+
+.order-range
+  display: flex
+  flex-direction: row
+
+.order-range-scroll
+  margin-top: 20px
+
+  &__item
+    width: 100%
+    height: 6px
+    background: rgba(255, 255, 255, 0.7)
+
+    &::-webkit-slider-thumb
+    -webkit-appearance: none
+    appearance: none
+    width: 6px
+    height: 6px
+    border-radius: 50%
+    background: #4CAF50
+    cursor: pointer
+
+    &:hover
+      opacity: 1
+
+.infile
+  width: 0
+  height: 0
+  opacity: 0
+  overflow: hidden
+  position: absolute
+  z-index: -1
+
+
+.infile + label
+  width: 370px
+  height: 48px
+  font-size: 1.25em
+  font-weight: 700
+  color: white
+  background-color: black
+  display: inline-block
+  margin-top: 30px
+
+
+.infile:focus + label,
+.infile + label:hover
+  background-color: red
