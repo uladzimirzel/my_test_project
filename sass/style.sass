@@ -1,6 +1,5 @@
 /***START MIXINS, VARIABLES***/
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway:wght@400;800&display=swap')
-
 @mixin nav
   font-family: Lato, sans-serif
   font-weight: 400
@@ -169,7 +168,7 @@ header
   display: flex
   flex-direction: row
   align-items: center
-  justify-content: center
+  justify-content: space-between
   margin-top: 80px
 
 
@@ -213,7 +212,7 @@ header
     position: absolute
     width: 70px
     top: 50px
-    right: -30px
+    right: -50px
     height: 1px
     border: 6px #C4C4C4
     border-top-style: dotted
@@ -245,14 +244,28 @@ header
       color: #272733
 
 .order-range-block
-  margin-right: 30px
+  margin-right: 23px
   margin-top: 30px
 
 .order-range-content
-  width: 770px
+  width: 777px
   display: flex
   justify-content: space-between
   color: #ffffff
+
+  &__title
+    font-family: Lato, sans-serif
+    font-weight: 400
+    font-style: normal
+    font-size: 18px
+    color: #FFFFFF
+
+  &__subtitle
+    font-family: Lato, sans-serif
+    font-weight: 400
+    font-style: normal
+    font-size: 18px
+    color: #FFFFFF
 
 
 .order-range
@@ -260,26 +273,38 @@ header
   flex-direction: row
 
 .order-range-scroll
-  margin-top: 20px
+  width: 770px
+  margin-top: 11px
 
   &__item
+    //-webkit-appearance: none
+    appearance: none
     width: 100%
     height: 6px
-    background: rgba(255, 255, 255, 0.7)
+    background: rgba(255,255,255, 0.7)
+    border: 1px solid #FFFFFF
+    border-radius: 3px
+    -webkit-transition: .2s
+    transition: opacity .2s
 
-    &::-webkit-slider-thumb
-    -webkit-appearance: none
+  &__item::-webkit-slider-thumb
+    //-webkit-appearance: none
     appearance: none
-    width: 6px
-    height: 6px
+    width: 24px
+    height: 24px
+    border: 3px solid #286690
     border-radius: 50%
-    background: #4CAF50
+    background: #42A9ED
     cursor: pointer
 
     &:hover
       opacity: 1
 
-.infile
+.order-range-file
+  margin-top: 30px
+
+
+.order-range-file__item
   width: 0
   height: 0
   opacity: 0
@@ -288,17 +313,15 @@ header
   z-index: -1
 
 
-.infile + label
+.order-range-file__item + label
   width: 370px
   height: 48px
-  font-size: 1.25em
-  font-weight: 700
-  color: white
-  background-color: black
+  font-family: Lato, sans-serif
+  text-transform: uppercase
+  font-size: 15px
+  font-weight: 600
+  color: #272733
+  background-color: #FFFFFF
+  border: 2px solid #3E9CDC
+  border-radius: 3px
   display: inline-block
-  margin-top: 30px
-
-
-.infile:focus + label,
-.infile + label:hover
-  background-color: red
