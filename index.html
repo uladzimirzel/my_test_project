@@ -117,15 +117,17 @@
                     <form action="#" class="order-form">
                         <div class="order-form-field">
                             <label for="list">
-                                <select class="order-form-field__item" name="" id="list">
+                                <select class="order-form-field__item" name="list" id="list">
                                     <option>Выберите тип системы</option>
                                 </select>
                             </label>
                             <label for="email">
-                                <input class="order-form-field__item" type="text" id="email" placeholder="Ваш e-mail">
+                                <input class="order-form-field__item" type="text" name="email" id="email"
+                                       placeholder="Ваш e-mail">
                             </label>
                             <label for="name">
-                                <input class="order-form-field__item" type="text" id="name" placeholder="Ваше имя">
+                                <input class="order-form-field__item" type="text" name="name" id="name"
+                                       placeholder="Ваше имя">
                             </label>
                         </div>
                         <div class="order-range">
@@ -134,8 +136,8 @@
                                     <div class="order-range-content__title">
                                         Sed ut perspiciatis, unde omnis iste natus
                                     </div>
-                                    <div class="order-range-content__subtitle">
-                                        75%
+                                    <div class="order-range-content__subtitle" id="value">
+
                                     </div>
                                 </div>
                                 <div class="order-range-scroll">
@@ -149,11 +151,21 @@
                                 <label for="file"><img src="img/list-file.png" alt="">Прикрепить файл</label>
                             </div>
                         </div>
+                        <div class="order-button">
+                            <a href="#" class="order-button__item">Отправить</a>
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
 </section>
+<footer>
+    <div class="container">
+
+    </div>
+</footer>
+<script src="js/script.js">
+</script>
 </body>
 </html>

@@ -261,6 +261,9 @@ header {
   font-size: 18px;
   color: #FFFFFF;
 }
+.order-range-content__subtitle::after {
+  content: "%";
+}
 
 .order-range {
   display: flex;
@@ -295,6 +298,8 @@ header {
 }
 
 .order-range-file {
+  display: flex;
+  justify-content: center;
   margin-top: 30px;
 }
 
@@ -313,12 +318,48 @@ header {
   font-family: Lato, sans-serif;
   text-transform: uppercase;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 400;
   color: #272733;
   background-color: #FFFFFF;
   border: 2px solid #3E9CDC;
+  padding: 10px;
+  text-align: center;
   border-radius: 3px;
   display: inline-block;
+}
+.order-range-file__item + label:hover {
+  cursor: pointer;
+}
+.order-range-file__item + label img {
+  position: relative;
+  top: 2px;
+  margin-right: 10px;
+}
+
+.order-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 47px;
+}
+.order-button__item {
+  width: 380px;
+  height: 48px;
+  background: #3E9CDC;
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
+  color: #ffffff;
+  font-family: Lato, sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  padding: 15px 10px;
+  text-align: center;
+}
+
+footer {
+  height: 80px;
+  background: #3D4050;
 }
 
 /*# sourceMappingURL=style.css.map */
