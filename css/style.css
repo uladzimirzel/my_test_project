@@ -319,6 +319,7 @@ header {
 }
 
 .order-range-file__item + label {
+  display: flex;
   width: 370px;
   height: 48px;
   font-family: Lato, sans-serif;
@@ -329,16 +330,18 @@ header {
   background-color: #FFFFFF;
   border: 2px solid #3E9CDC;
   padding: 10px;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   border-radius: 3px;
-  display: inline-block;
 }
 .order-range-file__item + label:hover {
   cursor: pointer;
 }
 .order-range-file__item + label img {
-  position: relative;
-  top: 2px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
   margin-right: 10px;
 }
 
