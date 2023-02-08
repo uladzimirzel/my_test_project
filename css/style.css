@@ -201,9 +201,9 @@ header {
   font-size: 16px;
 }
 .order-step-item::before {
-  content: "";
+  content: " ";
   position: absolute;
-  width: 70px;
+  width: 50px;
   top: 50px;
   right: -50px;
   height: 1px;
@@ -218,6 +218,7 @@ header {
   margin-top: 80px;
 }
 .order-form-field__item {
+  display: block;
   width: 370px;
   height: 48px;
   background: rgba(255, 255, 255, 0.89);
@@ -231,6 +232,10 @@ header {
   line-height: 22px;
   color: #272733;
   margin-right: 30px;
+}
+.order-form-field__item option {
+  background: #272733;
+  color: #FFFFFF;
 }
 .order-form-field__item::placeholder {
   color: #272733;
@@ -318,7 +323,7 @@ header {
   font-family: Lato, sans-serif;
   text-transform: uppercase;
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 600;
   color: #272733;
   background-color: #FFFFFF;
   border: 2px solid #3E9CDC;
@@ -360,6 +365,84 @@ header {
 footer {
   height: 80px;
   background: #3D4050;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0 30px 0;
+}
+
+.footer-copyright {
+  margin-right: 42px;
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  color: #FFFFFF;
+}
+.footer-copyright span {
+  text-transform: uppercase;
+}
+.footer-copyright:after {
+  content: "|";
+  position: relative;
+  left: 41px;
+  color: #C3C3C3;
+}
+
+.footer-pay {
+  display: flex;
+  align-items: center;
+  margin-right: 42px;
+}
+.footer-pay:after {
+  content: "|";
+  position: relative;
+  left: 41px;
+  color: #C3C3C3;
+}
+.footer-pay__item {
+  display: flex;
+  align-items: center;
+  margin-right: 37px;
+}
+.footer-pay__item span {
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  color: #C3C3C3;
+}
+.footer-pay__item:last-child {
+  margin: 0;
+}
+.footer-pay__item img {
+  margin-right: 12px;
+}
+
+.footer-contacts {
+  display: flex;
+  align-items: center;
+}
+.footer-contacts__item {
+  display: flex;
+  align-items: center;
+  margin-right: 41px;
+}
+.footer-contacts__item a {
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  color: #C3C3C3;
+}
+.footer-contacts__item:last-child {
+  margin-right: 0;
+}
+.footer-contacts__item img {
+  margin-right: 12px;
 }
 
 /*# sourceMappingURL=style.css.map */

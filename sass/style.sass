@@ -208,9 +208,9 @@ header
 
   &::before
     //background: url('../img/dotted.png') left bottom repeat-x
-    content: ''
+    content: ' '
     position: absolute
-    width: 70px
+    width: 50px
     top: 50px
     right: -50px
     height: 1px
@@ -225,6 +225,7 @@ header
 
 
   &__item
+    display: block
     width: 370px
     height: 48px
     background: rgba(255, 255, 255, 0.89)
@@ -239,9 +240,14 @@ header
     color: #272733
     margin-right: 30px
 
+    & option
+      background: #272733
+      color: #FFFFFF
 
     &::placeholder
       color: #272733
+
+
 
 .order-range-block
   margin-right: 23px
@@ -324,7 +330,7 @@ header
   font-family: Lato, sans-serif
   text-transform: uppercase
   font-size: 15px
-  font-weight: 400
+  font-weight: 600
   color: #272733
   background-color: #FFFFFF
   border: 2px solid #3E9CDC
@@ -365,4 +371,84 @@ header
 footer
   height: 80px
   background: #3D4050
+
+
+.footer-content
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 30px 0 30px 0
+
+
+.footer-copyright
+  margin-right: 42px
+  font-family: Lato, sans-serif
+  font-style: normal
+  font-weight: 400
+  font-size: 13px
+  color: #FFFFFF
+
+  & span
+    text-transform: uppercase
+
+  &:after
+    content: '|'
+    position: relative
+    left: 41px
+    color: #C3C3C3
+
+
+.footer-pay
+  display: flex
+  align-items: center
+  margin-right: 42px
+
+  &:after
+    content: '|'
+    position: relative
+    left: 41px
+    color: #C3C3C3
+
+  &__item
+    display: flex
+    align-items: center
+    margin-right: 37px
+    & span
+      font-family: Lato, sans-serif
+      font-style: normal
+      font-weight: 400
+      font-size: 13px
+      color: #C3C3C3
+    &:last-child
+      margin: 0
+
+    & img
+      margin-right: 12px
+
+
+.footer-contacts
+  display: flex
+  align-items: center
+
+  &__item
+    display: flex
+    align-items: center
+    margin-right: 41px
+    & a
+      font-family: Lato, sans-serif
+      font-style: normal
+      font-weight: 400
+      font-size: 13px
+      color: #C3C3C3
+
+    &:last-child
+      margin-right: 0
+
+    & img
+      margin-right: 12px
+
+
+
+
+
 
