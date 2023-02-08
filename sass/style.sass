@@ -207,13 +207,15 @@ header
     font-size: 16px
 
   &::before
+    content: ''
+    display: flex
+
     //background: url('../img/dotted.png') left bottom repeat-x
-    content: ' '
     position: absolute
-    width: 50px
     top: 50px
-    right: -50px
-    height: 1px
+    right: -40px
+    width: 50px
+    height: 5px
     border: 6px #C4C4C4
     border-top-style: dotted
 
